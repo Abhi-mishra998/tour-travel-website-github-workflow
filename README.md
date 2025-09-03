@@ -23,19 +23,21 @@ This project is deployed using **GitHub Pages** with automated CI/CD via **GitHu
 - **Version Control:** Git & GitHub  
 - **CI/CD & Hosting:** GitHub Actions + GitHub Pages  
 
--
 
 ## 📂 Project Structure
-.
-├── index.html # Homepage
-├── login.html # Login page
-├── signup.html # Signup page
-├── style.css # Stylesheet
-├── script.js # JavaScript interactivity
-├── assets/ # Images & static files
+
+```plaintext
+├── index.html       # Homepage
+├── login.html       # Login page
+├── signup.html      # Signup page
+├── style.css        # Stylesheet
+├── script.js        # JavaScript interactivity
+├── assets/          # Images & static files
 └── .github/
-└── workflows/
-└── pages.yml # GitHub Actions workflow for deployment
+    └── workflows/
+        └── pages.yml   # GitHub Actions workflow for deployment
+
+
 
 yaml
 Copy code
