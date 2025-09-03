@@ -1,52 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login - Wanderly</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet" />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="auth-wrapper">
-      <div class="auth-card">
-        <h1>Login</h1>
-        <p class="auth-subtext">Welcome back! Please enter your details.</p>
-        <form id="loginForm" novalidate>
-          <div class="form-group">
-            <label for="loginEmail">Email</label>
-            <input
-              type="email"
-              id="loginEmail"
-              placeholder="you@example.com"
-              required />
-            <small class="error"></small>
-          </div>
-          <div class="form-group">
-            <label for="loginPassword">Password</label>
-            <input
-              type="password"
-              id="loginPassword"
-              placeholder="Your password"
-              required />
-            <small class="error"></small>
-          </div>
-          <div class="auth-actions">
-            <a class="auth-link" href="#">Forgot Password?</a>
-            <button type="submit" class="btn btn-primary">Login</button>
-          </div>
-        </form>
-        <p class="auth-subtext">
-          Don’t have an account?
-          <a class="auth-link" href="signup.html">Signup</a>
-        </p>
-        <p><a class="auth-link" href="index.html">← Back to Home</a></p>
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login - Wanderly</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="auth-wrapper">
+    <div class="auth-card">
+      <h1>Login</h1>
+      <p class="auth-subtext">Welcome back! Enter your details to continue.</p>
+
+      <form id="loginForm" novalidate>
+        <div class="form-group">
+          <label for="loginEmail">Email</label>
+          <input
+            type="email"
+            id="loginEmail"
+            placeholder="you@example.com"
+            required
+            aria-describedby="emailError"
+          />
+          <small id="emailError" class="error"></small>
+        </div>
+
+        <div class="form-group">
+          <label for="loginPassword">Password</label>
+          <input
+            type="password"
+            id="loginPassword"
+            placeholder="Your password"
+            required
+            aria-describedby="passwordError"
+          />
+          <small id="passwordError" class="error"></small>
+        </div>
+
+        <div class="auth-actions">
+          <a class="auth-link" href="#">Forgot Password?</a>
+          <button type="submit" class="btn btn-primary">Login</button>
+        </div>
+      </form>
+
+      <p class="auth-subtext">
+        Don’t have an account? 
+        <a class="auth-link" href="signup.html">Sign Up</a>
+      </p>
+      <p>
+        <a class="auth-link" href="index.html">← Back to Home</a>
+      </p>
     </div>
-    <script src="script.js"></script>
-  </body>
+  </div>
+
+  <script src="script.js"></script>
+</body>
 </html>
