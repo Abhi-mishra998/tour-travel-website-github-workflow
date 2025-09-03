@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wanderly - Tour & Travel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header / Navbar -->
+    <header class="navbar">
+      <div class="container nav-container">
+        <a href="#home" class="logo">Wanderly</a>
+        <nav class="nav" id="navMenu">
+          <a href="#home" class="nav-link">Home</a>
+          <a href="#destinations" class="nav-link">Destinations</a>
+          <a href="#packages" class="nav-link">Packages</a>
+          <a href="#about" class="nav-link">About</a>
+          <a href="#contact" class="nav-link">Contact</a>
+          <a href="login.html" class="nav-link auth">Login</a>
+          <a href="signup.html" class="nav-link auth highlight">Signup</a>
+        </nav>
+        <button
+          class="hamburger"
+          id="hamburger"
+          aria-label="Toggle navigation"
+          aria-expanded="false">
+          ☰
+        </button>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <h1>Discover Your Next Adventure</h1>
+        <p>
+          Handpicked destinations, curated packages, and unforgettable journeys
+          tailored for you.
+        </p>
+        <a href="#packages" class="btn btn-primary">Book Your Trip</a>
+      </div>
+    </section>
+
+    <!-- Destinations Section -->
+    <section id="destinations" class="section">
+      <div class="container">
+        <h2 class="section-title">Popular Destinations</h2>
+        <div class="grid grid-3 responsive-gap">
+          <article class="card destination-card">
+            <div class="card-image">
+              <img
+                src="https://images.unsplash.com/photo-1505765050516-f72dcac9c60e?q=80&w=1200&auto=format&fit=crop"
+                alt="Santorini, Greece" />
+            </div>
+            <div class="card-body">
+              <h3>Santorini, Greece</h3>
+              <p>
+                White-washed cliffs, blue domes, and breathtaking sunsets over
+                the Aegean.
+              </p>
+              <a class="btn btn-outline" href="#">Explore</a>
+            </div>
+          </article>
+          <article class="card destination-card">
+            <div class="card-image">
+              <img
+                src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?q=80&w=1200&auto=format&fit=crop"
+                alt="Kyoto, Japan" />
+            </div>
+            <div class="card-body">
+              <h3>Kyoto, Japan</h3>
+              <p>
+                Ancient temples, tranquil gardens, and timeless culture in every
+                corner.
+              </p>
+              <a class="btn btn-outline" href="#">Explore</a>
+            </div>
+          </article>
+          <article class="card destination-card">
+            <div class="card-image">
+              <img
+                src="https://images.unsplash.com/photo-1505761671935-60b3a7427bad?q=80&w=1200&auto=format&fit=crop"
+                alt="Bali, Indonesia" />
+            </div>
+            <div class="card-body">
+              <h3>Bali, Indonesia</h3>
+              <p>
+                Lush rice terraces, serene beaches, and vibrant spiritual
+                traditions.
+              </p>
+              <a class="btn btn-outline" href="#">Explore</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Packages Section -->
+    <section id="packages" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Our Travel Packages</h2>
+        <div class="grid grid-3 responsive-gap">
+          <article class="card package-card">
+            <div class="card-body">
+              <h3>Essentials Getaway</h3>
+              <p class="price">$799</p>
+              <p class="duration">4 Days / 3 Nights</p>
+              <ul class="features">
+                <li>3-star hotels</li>
+                <li>City tour</li>
+                <li>Airport transfers</li>
+              </ul>
+              <a class="btn btn-primary" href="#contact">Book Now</a>
+            </div>
+          </article>
+          <article class="card package-card">
+            <div class="card-body">
+              <h3>Adventure Plus</h3>
+              <p class="price">$1,299</p>
+              <p class="duration">7 Days / 6 Nights</p>
+              <ul class="features">
+                <li>4-star hotels</li>
+                <li>Guided excursions</li>
+                <li>Local experiences</li>
+              </ul>
+              <a class="btn btn-primary" href="#contact">Book Now</a>
+            </div>
+          </article>
+          <article class="card package-card">
+            <div class="card-body">
+              <h3>Luxury Escape</h3>
+              <p class="price">$2,499</p>
+              <p class="duration">10 Days / 9 Nights</p>
+              <ul class="features">
+                <li>5-star resorts</li>
+                <li>Private tours</li>
+                <li>Premium dining</li>
+              </ul>
+              <a class="btn btn-primary" href="#contact">Book Now</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+      <div class="container about-grid">
+        <div class="about-image">
+          <img
+            src="https://images.unsplash.com/photo-1526779259212-939e64788e3c?q=80&w=1200&auto=format&fit=crop"
+            alt="Travelers exploring nature" />
+        </div>
+        <div class="about-content">
+          <h2 class="section-title">Why Choose Us</h2>
+          <p>
+            At Wanderly, we believe travel should be seamless, inspiring, and
+            personal. Our team crafts journeys that blend comfort, authenticity,
+            and adventure, so you can explore with confidence.
+          </p>
+          <p>
+            From handpicked stays to curated experiences, we turn your dream
+            destinations into unforgettable memories.
+          </p>
+          <a href="#contact" class="btn btn-outline">Learn More</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section section-alt">
+      <div class="container contact-grid">
+        <div class="contact-form-wrapper">
+          <h2 class="section-title">Get in Touch</h2>
+          <form id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your Name"
+                required />
+              <small class="error" id="nameError"></small>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="you@example.com"
+                required />
+              <small class="error" id="emailError"></small>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="How can we help?"
+                required></textarea>
+              <small class="error" id="messageError"></small>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+        <div class="contact-map">
+          <!-- Replace with Google Maps iframe if desired -->
+          <img
+            src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?q=80&w=1200&auto=format&fit=crop"
+            alt="Map placeholder" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div>
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#destinations">Destinations</a></li>
+            <li><a href="#packages">Packages</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Social Media</h4>
+          <ul class="footer-links">
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Newsletter</h4>
+          <form class="newsletter-form" id="newsletterForm" novalidate>
+            <input
+              type="email"
+              id="newsletterEmail"
+              placeholder="Enter your email"
+              required />
+            <button type="submit" class="btn btn-secondary">Subscribe</button>
+            <small class="error" id="newsletterError"></small>
+          </form>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          © <span id="year"></span> Abhishek Mishra❤ Wanderly Travel Co. All
+          rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
