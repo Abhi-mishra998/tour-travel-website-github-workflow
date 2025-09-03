@@ -26,7 +26,7 @@ This project is deployed using **GitHub Pages** with automated CI/CD via **GitHu
 
 ## 📂 Project Structure
 
-```plaintext
+plaintext
 ├── index.html       # Homepage
 ├── login.html       # Login page
 ├── signup.html      # Signup page
